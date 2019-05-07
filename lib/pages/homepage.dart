@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mediumclone/pages/blogdetail.dart';
 import '../model/blog.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,13 +14,24 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: dummyData.length,
-      itemBuilder: (context, position) => Column(
-            children: <Widget>[
-              Divider(
-                height: 10.0,
-              ),
-              itemBlog(context, position)
-            ],
+      itemBuilder: (context, position) => GestureDetector(
+            child: Column(
+              children: <Widget>[
+                Divider(
+                  height: 10.0,
+                ),
+                itemBlog(context, position)
+              ],
+            ),
+            onTap: () {
+               Navigator.push<bool>(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) => BlogDetail(
+                            ),
+                        ),
+                      );
+            },
           ),
     );
   }

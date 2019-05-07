@@ -9,16 +9,16 @@ class DrawerList extends StatelessWidget {
         color: Color.fromARGB(245, 245, 245, 245),
         child: ListView(
           children: <Widget>[
-            new Container(
-              child: new UserAccountsDrawerHeader(
+            Container(
+              child: UserAccountsDrawerHeader(
                 decoration: BoxDecoration(color: Colors.white),
                 accountName: Text(
                   "Ali Anıl Koçak",
-                  style: new TextStyle(fontSize: 15.0, color: Colors.black),
+                  style: TextStyle(fontSize: 15.0, color: Colors.black),
                 ),
                 accountEmail: Text(
                   "See profile",
-                  style: new TextStyle(fontSize: 15.0, color: Colors.grey),
+                  style: TextStyle(fontSize: 15.0, color: Colors.grey),
                 ),
                 currentAccountPicture: Container(
                   decoration: BoxDecoration(
@@ -68,7 +68,7 @@ class DrawerList extends StatelessWidget {
                 ],
               ),
             ),
-            new Divider(
+            Divider(
               height: 2.0,
             ),
             Container(
@@ -80,13 +80,16 @@ class DrawerList extends StatelessWidget {
                     padding: EdgeInsets.symmetric(vertical: 10.0),
                     child: Text(
                       "Become a member",
-                      style: TextStyle(fontSize: 16,     color: Color.fromARGB(245,2,158,116),),
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Color.fromARGB(245, 2, 158, 116),
+                      ),
                     ),
                   ),
                 ],
               ),
             ),
-            new Divider(
+            Divider(
               height: 2.0,
             ),
             Container(
@@ -97,7 +100,7 @@ class DrawerList extends StatelessWidget {
                   Container(
                     padding: EdgeInsets.symmetric(vertical: 10.0),
                     child: Text(
-                      "New Story",
+                      " Story",
                       style: TextStyle(fontSize: 16, color: Colors.black45),
                     ),
                   ),
