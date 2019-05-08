@@ -24,13 +24,12 @@ class HomePageState extends State<HomePage> {
               ],
             ),
             onTap: () {
-               Navigator.push<bool>(
-                        context,
-                        MaterialPageRoute(
-                          builder: (BuildContext context) => BlogDetail(
-                            ),
-                        ),
-                      );
+              Navigator.push<bool>(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => BlogDetail(),
+                ),
+              );
             },
           ),
     );

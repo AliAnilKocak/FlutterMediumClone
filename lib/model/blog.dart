@@ -18,6 +18,9 @@ class BlogModel {
     this.isFavorite,
     this.image,
   });
+
+
+
 }
 
 List<BlogModel> dummyData = [
@@ -76,3 +79,4 @@ List<BlogModel> dummyData = [
       isFavorite: true,
       image: "https://miro.medium.com/max/154/1*0dQNpR0DrpaZfMM8mXsvig.png"),
 ];
+
