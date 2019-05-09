@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:flutter_html_view/flutter_html_view.dart';
+import 'homepage.dart';
 
 class BlogDetail extends StatelessWidget {
   String html = '<body>Hello world! <a href="www.html5rocks.com">HTML5 rocks!';
@@ -46,55 +46,177 @@ class BlogDetail extends StatelessWidget {
           ),
         ),
       ),
-      body: Center(
-          child: Column(
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.only(left: 12, top: 12.0, right: 8),
-            child: Text(
-              "Refrigator Ladies: The First Computer Programmers",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 12, top: 12.0, right: 8),
-            child: Text(
-              "The story of ENIAC, the first completly electronic computer and the woman who made it possible",
-              style: TextStyle(color: Colors.black45, fontSize: 17),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 12, top: 12.0, right: 8),
-            child: Row(
+      body: SingleChildScrollView(
+        child: Container(
+          color: Colors.white,
+          child: Center(
+            child: Column(
               children: <Widget>[
-                Container(
-                  width: 24,
-                  height: 24,
-                  child: CircleAvatar(
-                    backgroundImage: NetworkImage(
-                        "https://banner2.kisspng.com/20190131/aob/kisspng-ad-blocking-adguard-computer-software-download-mob-5c537e57554f10.6046552315489757033494.jpg"),
+                Padding(
+                  padding: const EdgeInsets.only(left: 12, top: 12.0, right: 8),
+                  child: Text(
+                    "Refrigator Ladies: The First Computer Programmers",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.only(left: 12, top: 12.0, right: 8),
                   child: Text(
-                    "Ali Anıl Koçak",
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    "The story of ENIAC, the first completly electronic computer and the woman who made it possible",
+                    style: TextStyle(color: Colors.black45, fontSize: 17),
                   ),
                 ),
-                Text(
-                  "08/03/2018 - 11 Min Read",
-                  style: TextStyle(color: Colors.black45),
+                Padding(
+                  padding: const EdgeInsets.only(left: 12, top: 12.0, right: 8),
+                  child: Row(
+                    children: <Widget>[
+                      Container(
+                        width: 24,
+                        height: 24,
+                        child: CircleAvatar(
+                          backgroundImage: NetworkImage(
+                              "https://banner2.kisspng.com/20190131/aob/kisspng-ad-blocking-adguard-computer-software-download-mob-5c537e57554f10.6046552315489757033494.jpg"),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          "Ali Anıl Koçak",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      Text(
+                        "08/03/2018 - 11 Min Read",
+                        style: TextStyle(color: Colors.black45),
+                      ),
+                    ],
+                  ),
                 ),
-                new HtmlView(
-                  data: html,
-                  // optional, type String
+                Container(
+                  padding: EdgeInsets.only(top: 4.0),
+                  width: MediaQuery.of(context).size.width,
+                  child: Image.network(
+                      "https://cdn-images-1.medium.com/max/2600/1*A0KxddStHqQOTIIj2ri1gg.jpeg"),
+                ),
+                Padding(
+                  padding:
+                      const EdgeInsets.only(left: 16, top: 12.0, right: 12),
+                  child: Text(
+                    "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?",
+                    style: TextStyle(fontSize: 17),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 24.0),
+                  child: Divider(
+                    height: 2.0,
+                  ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: <Widget>[
+                    CircleAvatar(
+                      backgroundImage: NetworkImage(
+                          "https://banner2.kisspng.com/20190131/aob/kisspng-ad-blocking-adguard-computer-software-download-mob-5c537e57554f10.6046552315489757033494.jpg"),
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Text(
+                          "Published in",
+                          style: TextStyle(color: Colors.black45),
+                        ),
+                        Text("Published in"),
+                      ],
+                    ),
+                    Divider(
+                      height: 2.0,
+                    ),
+                    OutlineButton(
+                      textColor: Colors.blue,
+                      shape: new RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(4.0)),
+                      child: Text('Follow'),
+                      borderSide: BorderSide(
+                          color: Colors.blue,
+                          style: BorderStyle.solid,
+                          width: 1),
+                      onPressed: () {},
+                    ),
+                  ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 24.0),
+                  child: Divider(
+                    height: 2.0,
+                  ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: <Widget>[
+                    CircleAvatar(
+                      backgroundImage: NetworkImage(
+                          "https://banner2.kisspng.com/20190131/aob/kisspng-ad-blocking-adguard-computer-software-download-mob-5c537e57554f10.6046552315489757033494.jpg"),
+                    ),
+                    Column(
+                      children: <Widget>[
+                        Text(
+                          "Published in",
+                          style: TextStyle(color: Colors.black45),
+                        ),
+                        Text("Ali Anıl Koçak")
+                      ],
+                    ),
+                    Divider(
+                      height: 2.0,
+                    ),
+                    OutlineButton(
+                      textColor: Colors.blue,
+                      shape: new RoundedRectangleBorder(
+                          borderRadius: new BorderRadius.circular(4.0)),
+                      child: Text('Follow'),
+                      borderSide: BorderSide(
+                          color: Colors.blue,
+                          style: BorderStyle.solid,
+                          width: 1),
+                      onPressed: () {},
+                    ),
+                  ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 24.0),
+                  child: Divider(
+                    height: 2.0,
+                  ),
+                ),
+                itemBlog(context, 1),
+                itemBlog(context, 2),
+                itemBlog(context, 3),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 12.0),
+                  child: Divider(
+                    height: 2.0,
+                  ),
+                ),
+                Container(
+                  child: ListTile(
+                    title: Text(
+                      "Write a response...",
+                      style: TextStyle(color: Colors.black45),
+                    ),
+                    leading: Icon(FontAwesomeIcons.userCircle),
+                  ),
+                ),
+                 Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 12.0),
+                  child: Divider(
+                    height: 2.0,
+                  ),
                 ),
               ],
             ),
-          )
-        ],
-      )),
+          ),
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
           child: Padding(
         padding: const EdgeInsets.all(8.0),

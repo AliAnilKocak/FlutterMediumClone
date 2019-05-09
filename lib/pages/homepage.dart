@@ -36,7 +36,7 @@ class HomePageState extends State<HomePage> {
   }
 }
 
-Widget itemBlog(BuildContext context, int position) {
+  Widget itemBlog(BuildContext context, int position) {
   return Container(
     padding: EdgeInsets.only(bottom: 12.0, left: 8.0, right: 10.0),
     child: Column(
