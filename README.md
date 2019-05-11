@@ -6,11 +6,11 @@ Building a Medium Clone in Flutter.
 Screenshots<br>
 
 <p float="left">
-  <img src="screenshots/ss1.png" width="300" />
-    <img src="screenshots/ss2.png" width="300" />
-    <img src="screenshots/ss3.png" width="300" />
-   <img src="screenshots/ss4.png" width="300" />
-   <img src="screenshots/ss5.png" width="300" />
+  <img src="screenshots/ss1.png" width="420" />
+    <img src="screenshots/ss2.png" width="420" />
+    <img src="screenshots/ss3.png" width="420" />
+   <img src="screenshots/ss4.png" width="420" />
+   <img src="screenshots/ss5.png" width="420" />
 </p>
 
 <br>
