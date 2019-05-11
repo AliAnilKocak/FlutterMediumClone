@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:mediumclone/pages/profile.dart';
 import 'homepage.dart';
 
 class BlogDetail extends StatelessWidget {
@@ -178,7 +179,14 @@ class BlogDetail extends StatelessWidget {
                           color: Colors.blue,
                           style: BorderStyle.solid,
                           width: 1),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (BuildContext context) => Profile(),
+                          ),
+                        );
+                      },
                     ),
                   ],
                 ),
@@ -206,7 +214,7 @@ class BlogDetail extends StatelessWidget {
                     leading: Icon(FontAwesomeIcons.userCircle),
                   ),
                 ),
-                 Padding(
+                Padding(
                   padding: const EdgeInsets.symmetric(vertical: 12.0),
                   child: Divider(
                     height: 2.0,
