@@ -4,11 +4,13 @@ Building a Medium Clone in Flutter.
 
 <br>
 Screenshots<br>
-![alt text](https://github.com/AliAnilKocak/FlutterMediumClone/screenshoots/ss (1).png)
-![alt text](https://github.com/AliAnilKocak/FlutterMediumClone/screenshoots/ss (2).png)
-![alt text](https://github.com/AliAnilKocak/FlutterMediumClone/screenshoots/ss (3).png)
-![alt text](https://github.com/AliAnilKocak/FlutterMediumClone/screenshoots/ss (4).png)
-![alt text](https://github.com/AliAnilKocak/FlutterMediumClone/screenshoots/ss (5).png)
+
+<img src="https://github.com/AliAnilKocak/FlutterMediumClone/blob/master/screenshots/ss1.png" width="280" height="550">
+<img src="https://github.com/AliAnilKocak/FlutterMediumClone/blob/master/screenshots/ss2.png" width="280" height="550">
+<img src="https://github.com/AliAnilKocak/FlutterMediumClone/blob/master/screenshots/ss3.png" width="280" height="550">
+<img src="https://github.com/AliAnilKocak/FlutterMediumClone/blob/master/screenshots/ss4.png" width="280" height="550">
+<img src="https://github.com/AliAnilKocak/FlutterMediumClone/blob/master/screenshots/ss5.png" width="280" height="550">
+
 
 <br>
 <br>
