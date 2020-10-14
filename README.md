@@ -1,6 +1,6 @@
 # Flutter Medium Clone
 
-Building a Medium Clone in Flutter.
+Building a Medium Clone in Flutter
 
 <br>
 Screenshots<br>
